@@ -39,7 +39,7 @@ export default function DeployDelegatorButton() {
 
   return (
     <>
-      <button className="btn btn-primary btn-sm font-normal gap-1" onClick={handleDeployDelegator}>
+      <button className="btn btn-primary btn-sm font-normal gap-1" onClick={handleDeployDelegator} disabled={loading}>
         {loading ? "Deploying..." : "Deploy Delegator Account"}
       </button>
     </>
