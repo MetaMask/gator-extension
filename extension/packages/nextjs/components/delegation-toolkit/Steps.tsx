@@ -1,15 +1,15 @@
 "use client";
 
 import { useEffect } from "react";
-import useDelegateSmartAccount from "../_hooks/useDelegateSmartAccount";
-import useDelegatorSmartAccount from "../_hooks/useDelegatorSmartAccount";
-import { useStepContext } from "../_hooks/useStepContext";
-import useStorageClient from "../_hooks/useStorageClient";
 import CreateDelegateButton from "./CreateDelegateButton";
 import CreateDelegationButton from "./CreateDelegationButton";
 import DeployDelegatorButton from "./DeployDelegatorButton";
 import RedeemDelegationButton from "./RedeemDelegationButton";
 import { useAccount } from "wagmi";
+import useDelegateSmartAccount from "~~/hooks/delegation-toolkit/useDelegateSmartAccount";
+import useDelegatorSmartAccount from "~~/hooks/delegation-toolkit/useDelegatorSmartAccount";
+import { useStepContext } from "~~/hooks/delegation-toolkit/useStepContext";
+import useStorageClient from "~~/hooks/delegation-toolkit/useStorageClient";
 
 export default function Steps() {
   const { step, changeStep } = useStepContext();
@@ -46,18 +46,16 @@ export default function Steps() {
 
   return (
     <div className="max-w-3xl mx-auto">
-      {/* {step === 1 && (
-        <>
-          <p className="text-block">
-            The first step would be to connect your Metamask wallet.
+      {step === 1 && (
+        <div className="bg-base-100 border-base-300 border shadow-md shadow-secondary rounded-3xl px-6 lg:px-8 py-4">
+          <p className="text-base-content/80 mb-6 leading-relaxed">
+            The first step would be to connect your wallet.
             <br />
             <br />
-            You can customize the Wagmi config to connect to any chain you want,
-            and use the connector of your choice.
+            You can customize the Wagmi config to connect to any chain you want, and use the connector of your choice.
           </p>
-          <RainbowKitCustomConnectButton />
-        </>
-      )} */}
+        </div>
+      )}
       {step === 2 && (
         <div className="bg-base-100 border-base-300 border shadow-md shadow-secondary rounded-3xl px-6 lg:px-8 py-4">
           <p className="text-base-content/80 mb-6 leading-relaxed">

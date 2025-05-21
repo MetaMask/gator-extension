@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { GatorContext } from "../_providers/GatorProvider";
+import { GatorContext } from "../../app/delegation-toolkit/_providers/GatorProvider";
 
 export function useGatorContext() {
   const context = useContext(GatorContext);

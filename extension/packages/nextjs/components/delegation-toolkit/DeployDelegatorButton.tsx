@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import useDelegatorSmartAccount from "../_hooks/useDelegatorSmartAccount";
-import { usePimlicoUtils } from "../_hooks/usePimlicoUtils";
-import { useStepContext } from "../_hooks/useStepContext";
 import { zeroAddress } from "viem";
+import useDelegatorSmartAccount from "~~/hooks/delegation-toolkit/useDelegatorSmartAccount";
+import { usePimlicoUtils } from "~~/hooks/delegation-toolkit/usePimlicoUtils";
+import { useStepContext } from "~~/hooks/delegation-toolkit/useStepContext";
 
 export default function DeployDelegatorButton() {
   const [loading, setLoading] = useState(false);

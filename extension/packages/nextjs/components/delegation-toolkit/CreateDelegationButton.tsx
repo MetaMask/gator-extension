@@ -1,10 +1,10 @@
 "use client";
 
-import useDelegateSmartAccount from "../_hooks/useDelegateSmartAccount";
-import useDelegatorSmartAccount from "../_hooks/useDelegatorSmartAccount";
-import { useStepContext } from "../_hooks/useStepContext";
-import useStorageClient from "../_hooks/useStorageClient";
-import { prepareRootDelegation } from "../_utils/delegationUtils";
+import useDelegateSmartAccount from "~~/hooks/delegation-toolkit/useDelegateSmartAccount";
+import useDelegatorSmartAccount from "~~/hooks/delegation-toolkit/useDelegatorSmartAccount";
+import { useStepContext } from "~~/hooks/delegation-toolkit/useStepContext";
+import useStorageClient from "~~/hooks/delegation-toolkit/useStorageClient";
+import { prepareRootDelegation } from "~~/utils/delegation-toolkit/delegationUtils";
 
 export default function CreateDelegationButton() {
   const { smartAccount } = useDelegatorSmartAccount();

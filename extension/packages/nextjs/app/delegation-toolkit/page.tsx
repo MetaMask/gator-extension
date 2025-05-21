@@ -1,10 +1,10 @@
 "use client";
 
-import Hero from "./_components/Hero";
-import Steps from "./_components/Steps";
 import { GatorProvider } from "./_providers/GatorProvider";
 import { StepProvider } from "./_providers/StepProvider";
 import { NextPage } from "next";
+import Hero from "~~/components/delegation-toolkit/Hero";
+import Steps from "~~/components/delegation-toolkit/Steps";
 
 const DelegationToolkit: NextPage = () => {
   return (
