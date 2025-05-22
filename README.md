@@ -13,6 +13,6 @@ delegation, and redeeming the delegation according to [ERC-7710](https://eips.et
 ## Installation
 
 ```bash
-npx create-eth@latest -e @metamask/gator-extension
+npx create-eth@latest -e metamask/gator-extension
 ```
 
