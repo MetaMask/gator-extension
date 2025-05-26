@@ -8,13 +8,15 @@ export function usePimlicoUtils() {
   const [paymasterClient, setPaymasterClient] = useState<PaymasterClient>();
   const [bundlerClient, setBundlerClient] = useState<BundlerClient>();
   const [pimlicoClient, setPimlicoClient] = useState<PimlicoClient>();
+  const [error, setError] = useState<string | null>(null);
   const chainId = useChainId();
 
   useEffect(() => {
     const pimlicoKey = process.env.NEXT_PUBLIC_PIMLICO_API_KEY;
 
     if (!pimlicoKey) {
-      throw new Error("Pimlico API key is not set");
+      setError("Pimlico API key is not set. Please update the .env file.");
+      return;
     }
 
     const bundlerClient = createBundlerClient({
@@ -34,5 +36,5 @@ export function usePimlicoUtils() {
     setPaymasterClient(paymasterClient);
   }, [chainId]);
 
-  return { bundlerClient, paymasterClient, pimlicoClient };
+  return { bundlerClient, paymasterClient, pimlicoClient, error };
 }
