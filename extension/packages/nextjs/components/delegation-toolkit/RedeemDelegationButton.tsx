@@ -15,7 +15,7 @@ export default function RedeemDelegationButton() {
   const [transactionHash, setTransactionHash] = useState<Hex | null>(null);
   const chain = sepolia;
   const { getDelegation } = useStorageClient();
-  const { bundlerClient, paymasterClient, pimlicoClient } = usePimlicoUtils();
+  const { bundlerClient, paymasterClient, pimlicoClient, error } = usePimlicoUtils();
 
   const handleRedeemDelegation = async () => {
     if (!smartAccount) return;
@@ -52,6 +52,10 @@ export default function RedeemDelegationButton() {
     console.log(receipt);
     setLoading(false);
   };
+
+  if (error) {
+    return <div className="text-red-500">{error}</div>;
+  }
 
   if (transactionHash) {
     return (
