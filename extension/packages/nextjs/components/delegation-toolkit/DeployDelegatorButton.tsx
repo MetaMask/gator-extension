@@ -10,7 +10,7 @@ export default function DeployDelegatorButton() {
   const [loading, setLoading] = useState(false);
   const { smartAccount } = useDelegatorSmartAccount();
   const { changeStep } = useStepContext();
-  const { bundlerClient, paymasterClient, pimlicoClient, error } = usePimlicoUtils();
+  const { bundlerClient, paymasterClient, pimlicoClient } = usePimlicoUtils();
 
   const handleDeployDelegator = async () => {
     if (!smartAccount) return;
@@ -36,10 +36,6 @@ export default function DeployDelegatorButton() {
     setLoading(false);
     changeStep(3);
   };
-
-  if (error) {
-    return <div className="text-red-500">{error}</div>;
-  }
 
   return (
     <>
