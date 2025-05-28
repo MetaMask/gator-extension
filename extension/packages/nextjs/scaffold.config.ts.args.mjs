@@ -1,1 +1,1 @@
-export const chainName = 'sepolia';
+export const chainName = 'sepolia, hardhat';
