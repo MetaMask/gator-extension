@@ -20,7 +20,7 @@ export function prepareRootDelegation(delegator: MetaMaskSmartAccount, delegate:
 
   // Restricting a delegation:
   // https://docs.gator.metamask.io/how-to/create-delegation/restrict-delegation
-  const caveats = createCaveatBuilder(delegator.environment).addCaveat("limitedCalls", 1).build();
+  const caveats = createCaveatBuilder(delegator.environment).addCaveat("limitedCalls", 1);
 
   return createDelegation({
     to: delegate as `0x${string}`,
