@@ -8,7 +8,7 @@ const CreateDelegationCodeBlock = () => {
         <code>const caveats = createCaveatBuilder(delegator.environment)</code>
       </pre>
       <pre data-prefix=">">
-        <code> .addCaveat(&quot;limitedCalls&quot;, 1).build()</code>
+        <code> .addCaveat(&quot;limitedCalls&quot;, 1)</code>
       </pre>
       <pre data-prefix=">">
         <code></code>
@@ -50,7 +50,7 @@ const CreateDelegationCodeBlock = () => {
         <code>const signedDelegation = {`{ ...delegation, signature }`}</code>
       </pre>
       <pre data-prefix=">">
-        <code>storeDelegation(signedDelegation) {`// 💾 Persisted!`}</code>
+        <code>storeDelegation(signedDelegation) {`// Persisted!`}</code>
       </pre>
     </div>
   );

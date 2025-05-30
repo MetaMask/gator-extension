@@ -66,14 +66,14 @@ export default function Steps() {
           <AddressCard
             address={smartAccount?.address}
             title="Delegator Account"
-            description="The account that creates the delegation"
+            description="The delegator is an embedded smart account with a MetaMask EOA as its signer. This account is responsible for creating the delegation."
             fallbackText="Not connected"
           />
 
           <AddressCard
             address={delegateSmartAccount?.address}
             title="Delegate Account"
-            description="The account that receives the delegation"
+            description="The delegate is an embedded smart account with a locally generated private key as its signer. This account receives the delegation."
             fallbackText="Not created yet"
           />
         </div>
@@ -121,8 +121,17 @@ export default function Steps() {
             delegation will be persisted in localStorage.
             <br />
             <br />
-            To restrict the delegate account to only perform specific actions, the delegator can specify a caveats array
-            in the delegation.
+            The delegator <strong className="font-bold italic">must</strong> specify sufficient caveats to limit the
+            authority being granted to the delegate.{" "}
+            <a
+              href="https://docs.gator.metamask.io/development/how-to/create-delegation/restrict-delegation"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline italic"
+            >
+              See how to restrict the delegation
+            </a>
+            .
           </p>
 
           <LearnMoreButton href="https://docs.gator.metamask.io/how-to/create-delegation" />
