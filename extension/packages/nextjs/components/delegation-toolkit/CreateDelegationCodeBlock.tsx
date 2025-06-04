@@ -23,7 +23,7 @@ const CreateDelegationCodeBlock = () => {
         <code> from: delegator.address,</code>
       </pre>
       <pre data-prefix=">">
-        <code> caveats: caveats,</code>
+        <code> caveats,</code>
       </pre>
       <pre data-prefix=">">
         <code>{`})`}</code>

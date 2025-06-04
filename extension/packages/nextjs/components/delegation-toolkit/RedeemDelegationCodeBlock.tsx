@@ -38,7 +38,10 @@ const RedeemDelegationCodeBlock = () => {
         <code> calls: [{`{`}</code>
       </pre>
       <pre data-prefix=">">
-        <code> to: getDeleGatorEnvironment(chain.id).DelegationManager,</code>
+        <code>{` // You can use the delegateSmartAccount to retrieve the DeleGatorEnvironment`}</code>
+      </pre>
+      <pre data-prefix=">">
+        <code> to: delegateSmartAccount.environment.DelegationManager,</code>
       </pre>
       <pre data-prefix=">">
         <code> data: redeemData,</code>

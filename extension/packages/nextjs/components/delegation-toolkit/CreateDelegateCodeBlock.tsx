@@ -11,7 +11,7 @@ const DelegateCodeBlock = () => {
         <code></code>
       </pre>
       <pre data-prefix=">">
-        <code>toMetaMaskSmartAccount({`{`}</code>
+        <code>const delegateSmartAccount = await toMetaMaskSmartAccount({`{`}</code>
       </pre>
       <pre data-prefix=">">
         <code> client: publicClient,</code>
