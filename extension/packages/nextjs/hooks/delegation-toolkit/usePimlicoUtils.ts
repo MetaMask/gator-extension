@@ -15,7 +15,7 @@ export function usePimlicoUtils() {
     const pimlicoKey = process.env.NEXT_PUBLIC_PIMLICO_API_KEY;
 
     if (!pimlicoKey) {
-      setError("Pimlico API key is not set. Please update the .env file.");
+      setError("Pimlico API key is not set. Please set the NEXT_PUBLIC_PIMLICO_API_KEY environment variable.");
       return;
     }
 

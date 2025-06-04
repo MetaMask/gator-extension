@@ -38,7 +38,13 @@ export default function DeployDelegatorButton() {
   };
 
   if (error) {
-    return <div className="text-red-500">{error}</div>;
+    return (
+      <div className="bg-red-50 border border-red-200 shadow-md rounded-lg px-4 py-3 mb-4">
+        <div className="flex items-center">
+          <div className="text-red-600 text-sm">Error: {error}</div>
+        </div>
+      </div>
+    );
   }
 
   return (
