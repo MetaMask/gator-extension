@@ -96,7 +96,7 @@ export default function Steps() {
             button will send a dummy user operation to deploy the smart account on-chain.
           </p>
 
-          <LearnMoreButton href="https://docs.gator.metamask.io/how-to/create-delegator-account" />
+          <LearnMoreButton href="https://docs.metamask.io/delegation-toolkit/how-to/create-smart-account" />
           <CreateDelegatorCodeBlock />
           <DeployDelegatorButton />
         </div>
@@ -108,7 +108,7 @@ export default function Steps() {
             deployed on-chain), until it is deployed by submitting a user operation.
           </p>
 
-          <LearnMoreButton href="https://docs.gator.metamask.io/how-to/create-delegator-account" />
+          <LearnMoreButton href="https://docs.metamask.io/delegation-toolkit/how-to/create-smart-account" />
           <CreateDelegateCodeBlock />
           <CreateDelegateButton />
         </div>
@@ -124,7 +124,7 @@ export default function Steps() {
             The delegator <strong className="font-bold italic">must</strong> specify sufficient caveats to limit the
             authority being granted to the delegate.{" "}
             <a
-              href="https://docs.gator.metamask.io/development/how-to/create-delegation/restrict-delegation"
+              href="https://docs.metamask.io/delegation-toolkit/how-to/create-delegation/restrict-delegation"
               target="_blank"
               rel="noopener noreferrer"
               className="underline italic"
@@ -134,7 +134,7 @@ export default function Steps() {
             .
           </p>
 
-          <LearnMoreButton href="https://docs.gator.metamask.io/how-to/create-delegation" />
+          <LearnMoreButton href="https://docs.metamask.io/delegation-toolkit/how-to/create-delegation" />
 
           <CreateDelegationCodeBlock />
           <CreateDelegationButton />
@@ -161,7 +161,7 @@ export default function Steps() {
             localStorage to execute on behalf of the delegator.
           </p>
 
-          <LearnMoreButton href="https://docs.gator.metamask.io/how-to/redeem-delegation" />
+          <LearnMoreButton href="https://docs.metamask.io/delegation-toolkit/how-to/redeem-delegation" />
           <RedeemDelegationCodeBlock />
           <RedeemDelegationButton />
         </div>
