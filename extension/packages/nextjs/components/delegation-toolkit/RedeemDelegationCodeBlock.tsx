@@ -5,10 +5,10 @@ const RedeemDelegationCodeBlock = () => {
         <code>{`// utils/delegation-toolkit/delegationUtils.ts`}</code>
       </pre>
       <pre data-prefix=">">
-        <code>const execution = createExecution()</code>
+        <code>const execution = createExecution({ target: zeroAddress })</code>
       </pre>
       <pre data-prefix=">">
-        <code>const data = DelegationFramework.encode.redeemDelegations({`{`}</code>
+        <code>const data = DelegationManager.encode.redeemDelegations({`{`}</code>
       </pre>
       <pre data-prefix=">">
         <code> delegations: [[delegation]],</code>
