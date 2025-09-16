@@ -26,7 +26,7 @@ const DelegateCodeBlock = () => {
         <code> deploySalt: &quot;0x&quot;,</code>
       </pre>
       <pre data-prefix=">">
-        <code> signatory: {`{ account }`},</code>
+        <code> signer: {`{ account }`},</code>
       </pre>
       <pre data-prefix=">">
         <code>{`})`}</code>

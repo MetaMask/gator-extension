@@ -23,7 +23,7 @@ export default function useDelegatorSmartAccount(): {
       implementation: Implementation.Hybrid,
       deployParams: [address as Hex, [], [], []],
       deploySalt: "0x",
-      signatory: { walletClient },
+      signer: { walletClient },
     }).then(smartAccount => {
       setSmartAccount(smartAccount);
     });

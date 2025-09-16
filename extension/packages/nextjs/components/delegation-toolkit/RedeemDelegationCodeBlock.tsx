@@ -14,7 +14,7 @@ const RedeemDelegationCodeBlock = () => {
         <code> delegations: [[delegation]],</code>
       </pre>
       <pre data-prefix=">">
-        <code> modes: [SINGLE_DEFAULT_MODE],</code>
+        <code> modes: [ExecutionMode.SingleDefault],</code>
       </pre>
       <pre data-prefix=">">
         <code> executions: [[execution]],</code>

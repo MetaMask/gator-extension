@@ -5,16 +5,25 @@ const CreateDelegationCodeBlock = () => {
         <code>{`// utils/delegation-toolkit/delegationUtils.ts`}</code>
       </pre>
       <pre data-prefix=">">
-        <code>const caveats = createCaveatBuilder(delegator.environment)</code>
-      </pre>
-      <pre data-prefix=">">
-        <code> .addCaveat(&quot;limitedCalls&quot;, 1)</code>
-      </pre>
-      <pre data-prefix=">">
         <code></code>
       </pre>
       <pre data-prefix=">">
         <code>const delegation = createDelegation({`{`}</code>
+      </pre>
+      <pre data-prefix=">">
+        <code> scope: {`{`}</code>
+      </pre>
+      <pre data-prefix=">">
+        <code>  type: &quot;nativeTokenTransferAmount&quot;,</code>
+      </pre>
+      <pre data-prefix=">">
+        <code>  maxAmount: parseEther(&quot;0.001&quot;),</code>
+      </pre>
+      <pre data-prefix=">">
+        <code> {`}`},</code>
+      </pre>
+      <pre data-prefix=">">
+        <code> to: delegate,</code>
       </pre>
       <pre data-prefix=">">
         <code> to: delegate,</code>
@@ -23,7 +32,7 @@ const CreateDelegationCodeBlock = () => {
         <code> from: delegator.address,</code>
       </pre>
       <pre data-prefix=">">
-        <code> caveats,</code>
+        <code> environment: delegator.environment,</code>
       </pre>
       <pre data-prefix=">">
         <code>{`})`}</code>

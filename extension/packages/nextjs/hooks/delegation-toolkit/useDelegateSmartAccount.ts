@@ -25,7 +25,7 @@ export default function useDelegateSmartAccount() {
       implementation: Implementation.Hybrid,
       deployParams: [account.address as Hex, [], [], []],
       deploySalt: "0x",
-      signatory: { account },
+      signer: { account },
     }).then(smartAccount => {
       setSmartAccount(smartAccount);
     });
