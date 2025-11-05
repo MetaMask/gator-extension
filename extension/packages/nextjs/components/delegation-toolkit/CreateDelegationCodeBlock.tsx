@@ -26,9 +26,6 @@ const CreateDelegationCodeBlock = () => {
         <code> to: delegate,</code>
       </pre>
       <pre data-prefix=">">
-        <code> to: delegate,</code>
-      </pre>
-      <pre data-prefix=">">
         <code> from: delegator.address,</code>
       </pre>
       <pre data-prefix=">">
