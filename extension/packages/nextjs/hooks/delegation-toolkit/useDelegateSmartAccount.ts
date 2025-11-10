@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useGatorContext } from "./useGatorContext";
-import { Implementation, MetaMaskSmartAccount, toMetaMaskSmartAccount } from "@metamask/delegation-toolkit";
+import { Implementation, MetaMaskSmartAccount, toMetaMaskSmartAccount } from "@metamask/smart-accounts-kit";
 import { Hex } from "viem";
 import { privateKeyToAccount } from "viem/accounts";
 import { usePublicClient } from "wagmi";

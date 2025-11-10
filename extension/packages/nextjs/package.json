@@ -1,6 +1,6 @@
 {
     "dependencies": {
-        "@metamask/delegation-toolkit": "^0.13.0",
+        "@metamask/smart-accounts-kit": "^0.1.0",
         "permissionless": "^0.2.47"
     }
 }

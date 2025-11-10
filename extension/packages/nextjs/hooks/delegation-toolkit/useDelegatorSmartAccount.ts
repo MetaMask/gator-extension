@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Implementation, MetaMaskSmartAccount, toMetaMaskSmartAccount } from "@metamask/delegation-toolkit";
+import { Implementation, MetaMaskSmartAccount, toMetaMaskSmartAccount } from "@metamask/smart-accounts-kit";
 import { Hex } from "viem";
 import { useAccount, usePublicClient, useWalletClient } from "wagmi";
 

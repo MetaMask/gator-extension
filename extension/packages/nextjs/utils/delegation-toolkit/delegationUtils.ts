@@ -4,8 +4,8 @@ import {
   Delegation,
   MetaMaskSmartAccount,
   ExecutionMode,
-} from "@metamask/delegation-toolkit";
-import { DelegationManager } from "@metamask/delegation-toolkit/contracts";
+} from "@metamask/smart-accounts-kit";
+import { DelegationManager } from "@metamask/smart-accounts-kit/contracts";
 import { Address, Hex, parseEther, zeroAddress } from "viem";
 
 export function prepareRootDelegation(
@@ -17,11 +17,11 @@ export function prepareRootDelegation(
   // behalf.
 
   // You can add more caveats to the delegation as needed to restrict
-  // the delegate's actions. Checkout delegation-toolkit docs for more
-  // information on restricting delegate's actions.
+  // the delegate's actions. Checkout MetaMask Smart Accounts Kit docs for more
+  // information on how to use delegation scopes.
 
-  // Restricting a delegation:
-  // https://docs.metamask.io/delegation-toolkit/how-to/create-delegation/restrict-delegation/
+  // How to use delegation scopes:
+  // https://docs.metamask.io/smart-accounts-kit/guides/delegation/use-delegation-scopes/
 
   return createDelegation({
     scope: {

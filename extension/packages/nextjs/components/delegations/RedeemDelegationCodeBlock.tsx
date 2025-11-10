@@ -2,10 +2,10 @@ const RedeemDelegationCodeBlock = () => {
   return (
     <div className="mockup-code mb-4">
       <pre data-prefix="$">
-        <code>{`// utils/delegation-toolkit/delegationUtils.ts`}</code>
+        <code>{`// utils/delegations/delegationUtils.ts`}</code>
       </pre>
       <pre data-prefix=">">
-        <code>const execution = createExecution({ target: zeroAddress })</code>
+        <code>const execution = createExecution({target: zeroAddress })</code>
       </pre>
       <pre data-prefix=">">
         <code>const data = DelegationManager.encode.redeemDelegations({`{`}</code>
@@ -26,7 +26,7 @@ const RedeemDelegationCodeBlock = () => {
         <code></code>
       </pre>
       <pre data-prefix=">">
-        <code>{`// components/delegation-toolkit/RedeemDelegationButton.tsx`}</code>
+        <code>{`// components/delegations/RedeemDelegationButton.tsx`}</code>
       </pre>
       <pre data-prefix=">">
         <code>const userOperationHash = await bundlerClient.sendUserOperation({`{`}</code>

@@ -12,10 +12,10 @@ import LearnMoreButton from "./LearnMoreButton";
 import RedeemDelegationButton from "./RedeemDelegationButton";
 import RedeemDelegationCodeBlock from "./RedeemDelegationCodeBlock";
 import { useAccount } from "wagmi";
-import useDelegateSmartAccount from "~~/hooks/delegation-toolkit/useDelegateSmartAccount";
-import useDelegatorSmartAccount from "~~/hooks/delegation-toolkit/useDelegatorSmartAccount";
-import { useStepContext } from "~~/hooks/delegation-toolkit/useStepContext";
-import useStorageClient from "~~/hooks/delegation-toolkit/useStorageClient";
+import useDelegateSmartAccount from "~~/hooks/delegations/useDelegateSmartAccount";
+import useDelegatorSmartAccount from "~~/hooks/delegations/useDelegatorSmartAccount";
+import { useStepContext } from "~~/hooks/delegations/useStepContext";
+import useStorageClient from "~~/hooks/delegations/useStorageClient";
 
 export default function Steps() {
   const { step, changeStep } = useStepContext();
@@ -92,11 +92,11 @@ export default function Steps() {
       {step === 2 && (
         <div className="bg-base-100 border-base-300 border shadow-md shadow-secondary rounded-3xl px-6 lg:px-8 py-4">
           <p className="text-base-content/80 mb-6 leading-relaxed">
-            The MetaMask smart contract account that grants authority to the delegate account. The Deploy Delegator
+            The MetaMask Smart Account that grants authority to the delegate account. The Deploy Delegator
             button will send a dummy user operation to deploy the smart account on-chain.
           </p>
 
-          <LearnMoreButton href="https://docs.metamask.io/delegation-toolkit/how-to/create-smart-account" />
+          <LearnMoreButton href="https://docs.metamask.io/smart-accounts-kit/guides/smart-accounts/create-smart-account/" />
           <CreateDelegatorCodeBlock />
           <DeployDelegatorButton />
         </div>
@@ -104,11 +104,11 @@ export default function Steps() {
       {step === 3 && (
         <div className="bg-base-100 border-base-300 border shadow-md shadow-secondary rounded-3xl px-6 lg:px-8 py-4">
           <p className="text-base-content/80 mb-6 leading-relaxed">
-            The MetaMask smart contract account that receives the delegation. Initially this will be counterfactual (not
+            The MetaMask smart account that receives the delegation. Initially this will be counterfactual (not
             deployed on-chain), until it is deployed by submitting a user operation.
           </p>
 
-          <LearnMoreButton href="https://docs.metamask.io/delegation-toolkit/how-to/create-smart-account" />
+          <LearnMoreButton href="https://docs.metamask.io/smart-accounts-kit/guides/smart-accounts/create-smart-account/" />
           <CreateDelegateCodeBlock />
           <CreateDelegateButton />
         </div>
@@ -121,20 +121,20 @@ export default function Steps() {
             delegation will be persisted in localStorage.
             <br />
             <br />
-            The delegator <strong className="font-bold italic">must</strong> specify sufficient caveats to limit the
+            The delegator <strong className="font-bold italic">must</strong> specify delegation scope to limit the
             authority being granted to the delegate.{" "}
             <a
-              href="https://docs.metamask.io/delegation-toolkit/how-to/create-delegation/restrict-delegation"
+              href="https://docs.metamask.io/smart-accounts-kit/guides/delegation/use-delegation-scopes/"
               target="_blank"
               rel="noopener noreferrer"
               className="underline italic"
             >
-              See how to restrict the delegation
+              See how to use delegation scopes
             </a>
             .
           </p>
 
-          <LearnMoreButton href="https://docs.metamask.io/delegation-toolkit/how-to/create-delegation" />
+          <LearnMoreButton href="https://docs.metamask.io/smart-accounts-kit/guides/delegation/execute-on-smart-accounts-behalf/" />
 
           <CreateDelegationCodeBlock />
           <CreateDelegationButton />
@@ -161,7 +161,7 @@ export default function Steps() {
             localStorage to execute on behalf of the delegator.
           </p>
 
-          <LearnMoreButton href="https://docs.metamask.io/delegation-toolkit/how-to/redeem-delegation" />
+          <LearnMoreButton href="https://docs.metamask.io/smart-accounts-kit/guides/delegation/execute-on-smart-accounts-behalf/#7-redeem-the-delegation" />
           <RedeemDelegationCodeBlock />
           <RedeemDelegationButton />
         </div>

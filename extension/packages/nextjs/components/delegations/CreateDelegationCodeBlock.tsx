@@ -2,7 +2,7 @@ const CreateDelegationCodeBlock = () => {
   return (
     <div className="mockup-code mb-4">
       <pre data-prefix="$">
-        <code>{`// utils/delegation-toolkit/delegationUtils.ts`}</code>
+        <code>{`// utils/delegations/delegationUtils.ts`}</code>
       </pre>
       <pre data-prefix=">">
         <code></code>
@@ -38,7 +38,7 @@ const CreateDelegationCodeBlock = () => {
         <code></code>
       </pre>
       <pre data-prefix=">">
-        <code>{`// components/delegation-toolkit/CreateDelegationButton.tsx`}</code>
+        <code>{`// components/delegations/CreateDelegationButton.tsx`}</code>
       </pre>
       <pre data-prefix=">">
         <code>const signature = await smartAccount.signDelegation({`{`}</code>
