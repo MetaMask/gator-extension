@@ -1,4 +1,4 @@
-# MetaMask Samrt Accounts & Delegation Extension for Scaffold-ETH 2
+# MetaMask Samrt Accounts Kit Extension for Scaffold-ETH 2
 
 This extension demonstrates the end-to-end flow for 
 initializing a MetaMask Smart Account, generating and signing a 

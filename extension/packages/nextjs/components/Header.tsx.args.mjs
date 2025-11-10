@@ -10,4 +10,4 @@ export const extraMenuLinksObjects = [
 ];
 
 export const logoTitle = "MetaMask";
-export const logoSubtitle = "MetaMask Smart Accounts & Delegation";
+export const logoSubtitle = "Smart Accounts Kit";

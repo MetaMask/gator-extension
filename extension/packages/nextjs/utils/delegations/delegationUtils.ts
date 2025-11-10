@@ -1,17 +1,14 @@
 import {
+  Delegation,
+  ExecutionMode,
+  MetaMaskSmartAccount,
   createDelegation,
   createExecution,
-  Delegation,
-  MetaMaskSmartAccount,
-  ExecutionMode,
 } from "@metamask/smart-accounts-kit";
 import { DelegationManager } from "@metamask/smart-accounts-kit/contracts";
 import { Address, Hex, parseEther, zeroAddress } from "viem";
 
-export function prepareRootDelegation(
-  delegator: MetaMaskSmartAccount,
-  delegate: Address
-): Delegation {
+export function prepareRootDelegation(delegator: MetaMaskSmartAccount, delegate: Address): Delegation {
   // The following scope is a simple example that limits
   // the number of native token transfers the delegate can perform on the delegator's
   // behalf.

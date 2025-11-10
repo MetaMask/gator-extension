@@ -5,7 +5,9 @@ const RedeemDelegationCodeBlock = () => {
         <code>{`// utils/delegations/delegationUtils.ts`}</code>
       </pre>
       <pre data-prefix=">">
-        <code>const execution = createExecution({target: zeroAddress })</code>
+        <code>
+          const execution = createExecution({`{`}target: zeroAddress `{`}`})
+        </code>
       </pre>
       <pre data-prefix=">">
         <code>const data = DelegationManager.encode.redeemDelegations({`{`}</code>

@@ -14,10 +14,10 @@ const CreateDelegationCodeBlock = () => {
         <code> scope: {`{`}</code>
       </pre>
       <pre data-prefix=">">
-        <code>  type: &quot;nativeTokenTransferAmount&quot;,</code>
+        <code> type: &quot;nativeTokenTransferAmount&quot;,</code>
       </pre>
       <pre data-prefix=">">
-        <code>  maxAmount: parseEther(&quot;0.001&quot;),</code>
+        <code> maxAmount: parseEther(&quot;0.001&quot;),</code>
       </pre>
       <pre data-prefix=">">
         <code> {`}`},</code>

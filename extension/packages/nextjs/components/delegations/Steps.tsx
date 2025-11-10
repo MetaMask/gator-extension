@@ -92,8 +92,8 @@ export default function Steps() {
       {step === 2 && (
         <div className="bg-base-100 border-base-300 border shadow-md shadow-secondary rounded-3xl px-6 lg:px-8 py-4">
           <p className="text-base-content/80 mb-6 leading-relaxed">
-            The MetaMask Smart Account that grants authority to the delegate account. The Deploy Delegator
-            button will send a dummy user operation to deploy the smart account on-chain.
+            The MetaMask Smart Account that grants authority to the delegate account. The Deploy Delegator button will
+            send a dummy user operation to deploy the smart account on-chain.
           </p>
 
           <LearnMoreButton href="https://docs.metamask.io/smart-accounts-kit/guides/smart-accounts/create-smart-account/" />
@@ -104,8 +104,8 @@ export default function Steps() {
       {step === 3 && (
         <div className="bg-base-100 border-base-300 border shadow-md shadow-secondary rounded-3xl px-6 lg:px-8 py-4">
           <p className="text-base-content/80 mb-6 leading-relaxed">
-            The MetaMask smart account that receives the delegation. Initially this will be counterfactual (not
-            deployed on-chain), until it is deployed by submitting a user operation.
+            The MetaMask smart account that receives the delegation. Initially this will be counterfactual (not deployed
+            on-chain), until it is deployed by submitting a user operation.
           </p>
 
           <LearnMoreButton href="https://docs.metamask.io/smart-accounts-kit/guides/smart-accounts/create-smart-account/" />
