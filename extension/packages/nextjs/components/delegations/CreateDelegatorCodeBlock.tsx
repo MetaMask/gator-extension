@@ -20,7 +20,7 @@ const DelegatorSmartAccountCodeBlock = () => {
         <code> deploySalt: &quot;0x&quot;,</code>
       </pre>
       <pre data-prefix=">">
-        <code> signatory: {`{ walletClient }`},</code>
+        <code> signer: {`{ walletClient }`},</code>
       </pre>
       <pre data-prefix=">">
         <code>{`})`}</code>

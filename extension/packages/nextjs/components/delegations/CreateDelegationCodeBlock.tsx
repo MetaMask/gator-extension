@@ -2,13 +2,7 @@ const CreateDelegationCodeBlock = () => {
   return (
     <div className="mockup-code mb-4">
       <pre data-prefix="$">
-        <code>{`// utils/delegation-toolkit/delegationUtils.ts`}</code>
-      </pre>
-      <pre data-prefix=">">
-        <code>const caveats = createCaveatBuilder(delegator.environment)</code>
-      </pre>
-      <pre data-prefix=">">
-        <code> .addCaveat(&quot;limitedCalls&quot;, 1)</code>
+        <code>{`// utils/delegations/delegationUtils.ts`}</code>
       </pre>
       <pre data-prefix=">">
         <code></code>
@@ -17,13 +11,25 @@ const CreateDelegationCodeBlock = () => {
         <code>const delegation = createDelegation({`{`}</code>
       </pre>
       <pre data-prefix=">">
+        <code> scope: {`{`}</code>
+      </pre>
+      <pre data-prefix=">">
+        <code> type: &quot;nativeTokenTransferAmount&quot;,</code>
+      </pre>
+      <pre data-prefix=">">
+        <code> maxAmount: parseEther(&quot;0.001&quot;),</code>
+      </pre>
+      <pre data-prefix=">">
+        <code> {`}`},</code>
+      </pre>
+      <pre data-prefix=">">
         <code> to: delegate,</code>
       </pre>
       <pre data-prefix=">">
         <code> from: delegator.address,</code>
       </pre>
       <pre data-prefix=">">
-        <code> caveats,</code>
+        <code> environment: delegator.environment,</code>
       </pre>
       <pre data-prefix=">">
         <code>{`})`}</code>
@@ -32,7 +38,7 @@ const CreateDelegationCodeBlock = () => {
         <code></code>
       </pre>
       <pre data-prefix=">">
-        <code>{`// components/delegation-toolkit/CreateDelegationButton.tsx`}</code>
+        <code>{`// components/delegations/CreateDelegationButton.tsx`}</code>
       </pre>
       <pre data-prefix=">">
         <code>const signature = await smartAccount.signDelegation({`{`}</code>

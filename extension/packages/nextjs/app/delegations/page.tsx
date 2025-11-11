@@ -3,7 +3,7 @@
 import { GatorProvider } from "./_providers/GatorProvider";
 import { StepProvider } from "./_providers/StepProvider";
 import { NextPage } from "next";
-import Steps from "~~/components/delegation-toolkit/Steps";
+import Steps from "~~/components/delegations/Steps";
 
 const DelegationToolkit: NextPage = () => {
   return (

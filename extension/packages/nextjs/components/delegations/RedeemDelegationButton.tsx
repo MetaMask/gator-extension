@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { getDeleGatorEnvironment } from "@metamask/delegation-toolkit";
+import { getSmartAccountsEnvironment } from "@metamask/smart-accounts-kit";
 import { Hex } from "viem";
 import { sepolia } from "viem/chains";
-import useDelegateSmartAccount from "~~/hooks/delegation-toolkit/useDelegateSmartAccount";
-import { usePimlicoUtils } from "~~/hooks/delegation-toolkit/usePimlicoUtils";
-import useStorageClient from "~~/hooks/delegation-toolkit/useStorageClient";
-import { prepareRedeemDelegationData } from "~~/utils/delegation-toolkit/delegationUtils";
+import useDelegateSmartAccount from "~~/hooks/delegations/useDelegateSmartAccount";
+import { usePimlicoUtils } from "~~/hooks/delegations/usePimlicoUtils";
+import useStorageClient from "~~/hooks/delegations/useStorageClient";
+import { prepareRedeemDelegationData } from "~~/utils/delegations/delegationUtils";
 
 export default function RedeemDelegationButton() {
   const { smartAccount } = useDelegateSmartAccount();
@@ -35,7 +35,7 @@ export default function RedeemDelegationButton() {
       account: smartAccount,
       calls: [
         {
-          to: getDeleGatorEnvironment(chain.id).DelegationManager,
+          to: getSmartAccountsEnvironment(chain.id).DelegationManager,
           data: redeemData,
         },
       ],

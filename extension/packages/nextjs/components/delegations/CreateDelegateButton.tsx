@@ -1,6 +1,6 @@
 "use client";
 
-import { useGatorContext } from "~~/hooks/delegation-toolkit/useGatorContext";
+import { useGatorContext } from "~~/hooks/delegations/useGatorContext";
 
 export default function CreateDelegateButton() {
   const { generateDelegateWallet } = useGatorContext();
