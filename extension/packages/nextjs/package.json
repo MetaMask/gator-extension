@@ -1,6 +1,6 @@
 {
     "dependencies": {
-        "@metamask/smart-accounts-kit": "^1.0.0",
+        "@metamask/smart-accounts-kit": "^1.1.0",
         "permissionless": "^0.2.47"
     }
 }
